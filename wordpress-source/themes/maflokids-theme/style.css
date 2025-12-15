@@ -1,0 +1,302 @@
+/*
+Theme Name: Ma Flo Kids Theme
+Description: Custom WordPress theme for Ma Flo Kids website
+Version: 1.0
+Author: Ma Flo Kids Team
+*/
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.site-logo img {
+    height: 60px;
+    width: auto;
+}
+
+.site-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c5aa0;
+    text-decoration: none;
+}
+
+.site-title:hover {
+    color: #1e4080;
+}
+
+/* Navigation */
+.main-navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.main-navigation a:hover,
+.main-navigation a.current-menu-item {
+    background-color: #f0f4ff;
+    color: #2c5aa0;
+}
+
+/* Main content */
+.site-main {
+    padding: 2rem 0;
+    min-height: calc(100vh - 200px);
+}
+
+/* Hero section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+.cta-button,
+.btn {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover,
+.btn:hover {
+    background-color: #ff5252;
+    color: white;
+}
+
+/* Content sections */
+.content-section {
+    margin-bottom: 3rem;
+}
+
+.content-section h2 {
+    color: #2c5aa0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.content-section h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.content-section p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+/* Services grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.service-item {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.service-item h3 {
+    color: #2c5aa0;
+    margin-bottom: 1rem;
+}
+
+/* Contact section */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.contact-details {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 2rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+}
+
+/* Forms */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #2c5aa0;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-widget h4 {
+    margin-bottom: 1rem;
+}
+
+.footer-widget a {
+    color: #b8d4ff;
+    text-decoration: none;
+}
+
+.footer-widget a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid #4a6bc2;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .main-navigation ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.margin-bottom {
+    margin-bottom: 2rem;
+}
+
+.padding {
+    padding: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* WordPress specific classes */
+.wp-block-group {
+    margin-bottom: 2rem;
+}
+
+.wp-block-button .wp-block-button__link {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.wp-block-button .wp-block-button__link:hover {
+    background-color: #ff5252;
+}

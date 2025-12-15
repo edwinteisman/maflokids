@@ -1,1 +1,86 @@
+# Database password file
 mariadb-pw.txt
+
+# WordPress Installation Files (excluded from version control)
+/website/
+/backups/
+
+# WordPress Admin Password File (excluded for security)
+wp-admin-password.txt
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Node modules (if using npm for theme development)
+node_modules/
+npm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# PHP specific
+vendor/
+composer.phar
+composer.lock
+
+# Windows specific
+ehthumbs.db
+Desktop.ini
+
+# Mac specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# WordPress specific temp files
+wp-config-sample.php
+.htaccess
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/w3tc-config/
+
+# Development tools
+/.sass-cache
+/css/*.map
+/js/*.map
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Test files
+/tests/
+/test/
+phpunit.xml
+mariadb-db.txt
+original-site/about/_vti_cnf/
+original-site/contact/_vti_cnf/
+original-site/Documents/_vti_cnf/
+original-site/images/_vti_cnf/
+original-site/Nederlands/_vti_cnf/
+original-site/photo_gallery/_vti_cnf/
+original-site/Policy Plan/_vti_cnf/
+original-site/styles/_vti_cnf/
+original-site/Documents/
+original-site/information_links/_vti_cnf/
