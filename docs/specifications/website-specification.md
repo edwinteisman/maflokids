@@ -5,21 +5,43 @@
 ### Project Name
 Ma Flo Kids Website
 
+
 ### Project Description
-*Describe what Ma Flo Kids is about and what the website should accomplish*
+The Ma Flo Kids website represents the Ma-Flo Foundation, a non-profit organization founded to support the education of AIDS orphans in Bali, Cameroon. The foundation was established by Mrs. Florence Foyab-Bergner (Ma Flo) and is registered in the Netherlands. The website aims to:
+
+- Inform visitors about the foundation’s mission, history, and ongoing projects.
+- Share stories and updates about the children supported by the foundation.
+- Provide access to important documents, policy plans, and financial reports.
+- Encourage donations and support from individuals and organizations.
+- Serve both English and Dutch-speaking audiences, with language switching available.
+
+
 
 ### Website Goals
-- [ ] Primary goal:
-- [ ] Secondary goals:
-- [ ] Success metrics:
+- [x] Primary goal: Raise awareness and support for the education of AIDS orphans in Bali, Cameroon.
+- [x] Secondary goals:
+  - Provide transparent information about the foundation’s activities and finances.
+  - Facilitate donations and volunteer involvement.
+  - Share news, reports, and photo galleries to engage supporters.
+- [x] Success metrics:
+  - Increased number of website visitors.
+  - Growth in donations and donor engagement.
+  - Positive feedback from users and stakeholders.
 
 ## 2. Target Audience
 
 ### Primary Audience
-*Who is the main audience for this website?*
+The main audience for the Ma Flo Kids website includes:
+- Individuals and organizations interested in supporting children’s education in Africa.
+- Donors and sponsors seeking transparency and updates on their contributions.
+- Community members from the Netherlands and Cameroon, especially those with ties to Bali, Cameroon.
+- Volunteers and potential partners.
 
 ### User Personas
-*Create detailed user personas*
+- **Donor (Anna, 45, Netherlands):** Wants to support a trustworthy charity, seeks clear information on how donations are used, prefers to read in Dutch.
+- **Volunteer (Linda, 28, Cameroon):** Interested in helping with local projects, looks for contact information and project updates, prefers English.
+- **Community Member (Samuel, 35, Cameroon/Netherlands):** Wants to stay informed about the foundation’s impact, reads both English and Dutch, shares news with friends and family.
+
 
 ## 3. Website Structure & Navigation
 
@@ -27,17 +49,30 @@ Ma Flo Kids Website
 ```
 Home
 ├── About
-├── Services/Products
-├── Gallery/Portfolio
+├── Latest Pupils
+├── Documents
+├── Profit/Loss accounts
+├── Policy Plan
+├── Nederlands (Dutch version of main pages)
+├── Français (French version of main pages)
+├── Photo Gallery
 ├── Contact
-└── Blog (optional)
+├── Anbi/Kvk Info
 ```
 
 ### Navigation Requirements
-- [ ] Main navigation menu
-- [ ] Footer navigation
-- [ ] Breadcrumbs
-- [ ] Search functionality (if needed)
+- [x] Main navigation menu (links to all main sections, including language switch)
+- [x] Footer navigation (repeats main links for accessibility)
+- [ ] It must be possible to switch between English, Dutch and French from any page
+- [ ] Breadcrumbs (not present in current site)
+- [ ] Search functionality (not present in current site)
+
+#### Notes
+- The website is bilingual, with a dedicated Dutch section and French section  and language switch in the navigation.
+- Each main section (About, Pupils, Documents, Policy Plan, Gallery, Contact) is accessible from both the main and footer navigation.
+- To keep the children and their identities safe, only the first name of the children should be shown, and no photos or other identifying information should be displayed.
+- For legal purposes the website should show the ANBI/KVK information, as required by Dutch law (tax information). This is necessary to maintain the ANBI status of the foundation.
+- The website should show profile/loss account, as required by Dutch tax laws. This is necessary to maintain the ANBI status of the foundation.
 
 ## 4. Content Requirements
 
