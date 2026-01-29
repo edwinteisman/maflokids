@@ -1,5 +1,6 @@
 :root {
   --navbar-color: #3B270C; /*#032f3e*/
+  --navbar-border-color: #66554499;
   --background-color: #FFF9F6;
 }
 /*html,body {
@@ -61,7 +62,7 @@ nav h1 {
 
 .logo {
     float:left;
-    
+
 }
 
 .nav-top {
@@ -168,12 +169,12 @@ nav h1 {
 
 .main-nav ul.nav > li {
     vertical-align:top;
-    border-left:1px solid #0d3948;
-        
+    border-left:1px solid var(--navbar-border-color);
+
 }
 .main-nav ul.nav > li:last-child {
-    border-right:1px solid #0d3948;
-        
+    border-right:1px solid var(--navbar-border-color);
+
 }
 
 .main-nav ul.nav > li > a {
@@ -251,7 +252,7 @@ nav.small .main-nav {
 }
 
 nav.small ul.nav {
-    padding-left:150px
+    padding-left:250px
 }
 
 nav.small .minilogo {

@@ -1,9 +1,10 @@
 
 :root {
-  --font-color: #553322cc;
+  --font-color: #553322ff;
   --main-color: #3B270C; /*#032f3e*/
   --background-color: #FFF9F6;
   --section-background: #FFF3EC;
+  --navbar-color: #3B270C; /*#032f3e*/
 }
 
 /*
@@ -34,12 +35,17 @@ img {
     -webkit-user-drag: none;
     user-drag: none;
 }
+a {
+    color: var(--font-color);
+    text-decoration: none
+}
 a,
 a:hover,
 a:active,
 a:focus {
     text-decoration: none;
     outline: none;
+    color: #FF6600;
 }
 a,
 button,
@@ -169,8 +175,9 @@ h6 {
 }
 p {
     line-height: 1.875rem;
-    font-size: 1.125rem;
-    font-family: 'latolight'; 
+    font-size: 1.36rem;
+    font-family: 'latolight';
+    color: black;
 }
 p:last-child {
     margin-bottom: 0px;
@@ -363,11 +370,11 @@ Button
     color: #fff;
     background-color: #032f3e;
     border-color: #032f3e;
-    transition: .5s;	
+    transition: .5s;
 }
 .btn-primary:hover {
     color: #fff;
-    background-color: #043c4f;	
+    background-color: #043c4f;
 }
 
 .btn_news_color{
@@ -492,9 +499,9 @@ input::-ms-input-placeholder {
     padding-top: 0px;
     padding-bottom: 0px;
     position: fixed;
-    top: 0; 
-    left: 0; 
-    right: 0; 
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 300;
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
@@ -510,7 +517,7 @@ input::-ms-input-placeholder {
 
 .navbar-brand {
     padding: 0px 15px;
-    width: 153px;
+    width: 220px;
 }
 
 
@@ -563,7 +570,7 @@ input::-ms-input-placeholder {
 .main_home h1 {
 	font-size: 4rem;
 }
-	
+
 
 
 /*home section*/
@@ -572,18 +579,28 @@ input::-ms-input-placeholder {
     background-size: cover;
 }
 
+.footer_logo > img {
+    max-width: 300px;
+}
+
 @media only screen and (max-width: 1200px) {
 	.home {
 		background: url(../images/homebg-newer.avif) no-repeat 65% 100%;
-		background-size: cover;	
+		background-size: cover;
 	}
+    .footer_logo > img {
+        max-width: 190px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
 	.home {
 		background: url(../images/homebg-newer.avif) no-repeat 55% 100%;
-		background-size: cover;	
+		background-size: cover;
 	}
+    .footer_logo > img {
+        max-width: 150px;
+    }
 }
 
 .home .main_home{
@@ -667,7 +684,7 @@ input::-ms-input-placeholder {
 }
 
 .single_service h3{
-    color: #032f3e;
+    color: #000;
     font-size: 1.125rem;
     max-width: 48%;
     margin: 0 auto;
@@ -676,12 +693,31 @@ input::-ms-input-placeholder {
 
 /*lessons section css*/
 .lessons{
-    background: url(../images/happy-child-banner.avif) no-repeat top right #775344;
+    position: relative;
+    isolation: isolate;
+    background: linear-gradient(to left, #9C6B5B, #3B270Ccc);
+    background: linear-gradient(to left, white, #3B270Ccc);
     overflow: hidden;
+    xpadding-right: 480px;
+}
+.lessons::after {
+    content: '';
+    position: absolute;
+    z-index: -2;
+
+    xright: -480px;
+    top: 0;
+    bottom: 100%;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background: url(../images/happy-child-banner.avif) no-repeat top left #775344;
     background-size: cover;
+    overflow: hidden;
+    mask-image: linear-gradient(to left, rgba(0,0,0,0.66), rgba(0,0,0,0));
 }
 .main_lessons{
-    
+
 }
 .lesson_title{}
 .lesson_title h1{
@@ -707,7 +743,7 @@ input::-ms-input-placeholder {
     left: 15px;
     top: 20px;
     content: "";
-    background: #fff;
+    /*background: #fff;*/
     width: 2px;
     height: 90%;
 }
@@ -719,8 +755,8 @@ input::-ms-input-placeholder {
 }
 .lesson_content ul li i{
     font-size: 40px;
-    color: #AB987A;
-    background: #032F3E;
+    color: #ddbb66;
+    /*background: #665544;*/
     width: 36px;
     height: 60px;
     line-height: 60px;
@@ -743,7 +779,7 @@ input::-ms-input-placeholder {
 	background-color: var(--background-color);
 }
 .main_portfolio{
-	
+
 }
 .main_portfolio_content_area{}
 .single_portfolio_content{}
@@ -758,7 +794,7 @@ input::-ms-input-placeholder {
     opacity: 1;
 }
 .single_content_item2{
-    position: relative;   
+    position: relative;
     margin-bottom: 40px;
 }
 .single_content_item2 img{
@@ -872,7 +908,7 @@ input::-ms-input-placeholder {
 }
 .single_callus .skypeicon_left i{
     font-size: 110px;
-    color: #00aff0;
+    color: #ddbb66;
 }
 .single_callus .skypeicon_right{
     width:80%;
@@ -901,12 +937,13 @@ input::-ms-input-placeholder {
 }
 
 .news_content_left_content{
-    padding: 30px 20px 20px 20px;  
+    padding: 30px 20px 20px 20px;
 }
 p.subtitle{
     font-size:1rem;
     text-transform: uppercase;
     font-family: 'robotobold';
+    color: var(--font-color);
 }
 
 .bottom_btn_area_content{
@@ -917,13 +954,13 @@ p.subtitle{
   float:left;
   display: inline-block;
   width:90%;
-  
+
 }
 .bottom_btn_area_content a.news_right_icon{
   float:right;
   width:10%;
   display: inline-block;
-  
+
 }*/
 a.news_icon{
     text-transform: uppercase;
@@ -957,8 +994,11 @@ a i{
 
 }
 .single_news_right_content .single_icon_area .single_icon_content_calander{
-    background: #032f3e;
+    background: var(--main-color);
     color:#fff;
+}
+.single_news_right_content .single_icon_area .single_icon_content_calander p {
+    color: white;
 }
 
 
@@ -1034,7 +1074,7 @@ a i{
     color:#e8e8e8;
 }
 .footer_widget .main_widget{
-    padding:55px 20px 80px 20px; 
+    padding:55px 20px 80px 20px;
     overflow: hidden;
 }
 .footer_title_left{
